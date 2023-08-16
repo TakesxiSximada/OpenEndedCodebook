@@ -325,7 +325,7 @@ class EnvironmentEvogym:
 
 
 
-class EnvrionmentEvogymConfig:
+class EnvironmentEvogymConfig:
     def __init__(self,
                  robot,
                  neat_config,
