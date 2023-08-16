@@ -17,7 +17,7 @@ import custom_envs.parkour
 
 from poet.poet_algo import POET
 from poet.learner_ppo import OptimizerPPOConfig
-from poet.environment_evogym import EnvrionmentEvogymConfig
+from poet.environment_evogym import EnvironmentEvogymConfig
 
 
 from arguments.evogym_poet import get_args
@@ -37,7 +37,7 @@ def main():
     cppn_config_file = os.path.join(save_path, 'evogym_terrain.cfg')
     cppn_config.save(cppn_config_file)
 
-    env_config = EnvrionmentEvogymConfig(
+    env_config = EnvironmentEvogymConfig(
         robot,
         cppn_config,
         env_id=args.task,

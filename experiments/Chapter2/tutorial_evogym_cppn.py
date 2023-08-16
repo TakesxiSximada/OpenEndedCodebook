@@ -102,8 +102,7 @@ def main():
     drawer.draw(states)
 
     while True:
-        print('put the operation (m: mutate, r: reset genome, else: finish): ', end='')
-        operation = input()
+        operation = input('put the operation (m: mutate, r: reset genome, else: finish): ')
         if operation == 'm':
             genome = mutate_genome(genome, config)
         elif operation == 'r':

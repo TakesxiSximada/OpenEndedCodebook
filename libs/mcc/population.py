@@ -52,8 +52,6 @@ class Population:
 
             self.generation += 1
 
-        return
-
     @staticmethod
     def update_pop(pop, survivors, pop_size, config):
         pop_unite = list(pop.items()) + list(survivors.items())

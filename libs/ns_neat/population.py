@@ -1,11 +1,11 @@
-from neat_cppn import Population
+from neat_cppn import Population as NeatCppnPopulation
 from . import metrices
 
 
 class CompleteExtinctionException(Exception):
     pass
 
-class Population(Population):
+class Population(NeatCppnPopulation):
 
     def __init__(self, config, initial_state=None, constraint_function=None):
         super().__init__(config, initial_state=initial_state, constraint_function=constraint_function)
